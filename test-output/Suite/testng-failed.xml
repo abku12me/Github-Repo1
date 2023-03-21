@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="firefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="Vtigerapplication.CreateDocumentsModule">
+        <methods>
+          <include name="logoutapp"/>
+          <include name="framehandle"/>
+          <include name="loginapp"/>
+          <include name="LaunchBrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Vtigerapplication.CreateDocumentsModule -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
